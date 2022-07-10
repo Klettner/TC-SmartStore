@@ -1,0 +1,14 @@
+{
+  "name": "smartstore",
+  "version": "1.0.0",
+  "description": "Deployment script for backend server on heroku",
+  "author": "Manuel Klettner",
+  "scripts": {
+    "install": "cd Backend && npm install --dev",
+    "build": "cd Backend && npm run build",
+    "start": "cd Backend && npm run start"
+  },
+  "engines": {
+    "node": "18.4"
+  }
+}
