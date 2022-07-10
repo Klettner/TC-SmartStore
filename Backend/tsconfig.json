@@ -28,9 +28,6 @@
     "include": [
         "src/**/*"
     ],
-    "exclude": [
-        "src/security/passport-auth-template.ts"
-    ],
     "typedocOptions": {
         "entryPoints": ["src/server.ts"],
         "out": "docs"
