@@ -27,6 +27,7 @@ It consists of three systems. A web application (frontend) that is displayed in 
 ``npm run dev``
 4. For use in production run  
 ``npm run build && npm run start``
+5. If you want to deploy it on heroku use branch: __deployment-fe__
   
 ### Edge Client
 1. Clone the repo to the Raspberry Pi and open the **Edge** folder
