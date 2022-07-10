@@ -1,0 +1,15 @@
+{
+  "name": "smartstore",
+  "version": "1.0.0",
+  "description": "Deployment script for smartstore frontend on heroku",
+  "author": "Manuel Klettner",
+  "main": "Frontend/src/index.js",
+  "scripts": {
+    "install": "cd Frontend && npm install --dev && npm install serve -g",
+    "build": "cd Frontend && npm run build",
+    "start": "cd Frontend && npm run start"
+  },
+  "engines": {
+    "node": "18.4"
+  }
+}

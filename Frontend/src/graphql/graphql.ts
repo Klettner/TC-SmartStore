@@ -1,7 +1,7 @@
 import { GraphQLClient } from 'graphql-request'
 import gql from "graphql-tag"
 
-const url = 'http://localhost:8080/graphql'
+const url = 'https://tc-smart-store-be.herokuapp.com/graphql'
 
 export const graphqlClientAuth = (token: string) => {
 	return new GraphQLClient(url, {

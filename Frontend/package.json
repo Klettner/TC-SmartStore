@@ -10,11 +10,12 @@
     "format": "tsfmt -r",
     "build-react": "react-scripts build",
     "build": "npm-run-all lint format build-react",
-    "start": "react-scripts start",
+    "start": "serve -s build",
     "dev:start": "npm-run-all lint format start",
     "dev": "npm run dev:start",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "postinstall":"tsc"
   },
   "eslintConfig": {
     "extends": [
