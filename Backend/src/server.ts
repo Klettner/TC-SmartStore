@@ -21,11 +21,11 @@ dotenv.config()
 
 // port is now available to the Node.js runtime
 // as if it were an environment variable
-const port = process.env.SERVER_PORT
+const port = process.env.PORT || process.env.SERVER_PORT
 const { DB_USER, DB_PASS } = process.env
 const NODE_ENV = process.env.NODE_ENV
 const corsOptions = {
-	origin: ["http://localhost:3000", "https://studio.apollographql.com"],
+	origin: ["http://localhost:3000", "https://studio.apollographql.com", "https://tc-smart-store.herokuapp.com"],
 	credentials: true
 }
 
