@@ -1,0 +1,28 @@
+# schema.graphql
+
+schema {
+  query: Query
+  mutation: Mutation
+}
+
+type Query {
+  helloWorld: String!
+  getPallet(serialNumber: String!): Pallet!
+  getAllPallets: [Pallet]!
+}
+
+type Mutation {
+  #User
+  signup(email: String!, password: String!, firstName: String, lastName: String): LoginRegisterResponse
+  login(email: String!, password: String!): LoginRegisterResponse
+
+  #Pallet
+  createPallet(pallet: PalletInput!): Pallet
+  deletePallet(serialNumber: String!): Pallet
+  updatePalletWeight(serialNumber: String!, weight: Int!): Pallet
+  updateProductOfPallet(serialNumber: String!, product: ProductInput!): Pallet
+}
+
+type Subscription {
+  palletUpdated: Pallet
+}

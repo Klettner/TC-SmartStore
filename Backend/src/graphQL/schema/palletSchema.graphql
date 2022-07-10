@@ -1,0 +1,21 @@
+type Pallet {
+    id: ID!
+    serialNumber: String!
+    weight: Int!
+    product: Product
+}
+
+input PalletInput {
+    serialNumber: String!
+    weight: Int!
+}
+
+type Product {
+    title: String
+    weight: Int
+}
+
+input ProductInput {
+    title: String!
+    weight: Int!
+}

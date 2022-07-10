@@ -1,0 +1,17 @@
+type AuthPayload {
+  token: String
+  user: String
+}
+type LoginRegisterResponse{
+  isAuthenticated: Boolean!
+	authToken: AuthPayload
+	userId: String
+	message: String!
+}
+
+type User {
+  id: ID!
+  firstName: String
+	lastName: String
+  email: String!
+}
