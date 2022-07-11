@@ -49,4 +49,4 @@ def update_pallet_weight(serial_number: str, weight: int):
 # Available requests:
 # update_pallet_weight("A1", 4000)
 # delete_pallet("A2")
-create_pallet("A2", 5000)
+# create_pallet("A2", 5000)
